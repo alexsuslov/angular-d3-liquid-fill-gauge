@@ -1,0 +1,22 @@
+{
+  "name": "angular-d3-liquid-fill-gauge",
+  "homepage": "https://github.com/alexsuslov/angular-d3-liquid-fill-gauge",
+  "authors": [
+    "Alex Suslov <suslov@me.com>"
+  ],
+  "description": "",
+  "main": "dir.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^3.5.14",
+    "angular": "^1.4.9"
+  }
+}
