@@ -6,15 +6,15 @@ angular.module('app', ['angularD3LiquidFillGauge'])
   ])
   .controller('testCtrl', ["$scope",
     function($scope) {
-
-
       //$scope.gauge1 = loadLiquidFillGauge("fillgauge1", 55);
       //$scope.config1 = liquidFillGaugeDefaultSettings();
 
       $scope.init = function(percentage) {
 
 
-        $scope.completionPercent = percentage;
+        $scope.config = {
+          circleColor: "#FF7777"
+        };
         /*$scope.config1.circleColor = "#FF7777";
 		$scope.config1.textColor = "#FF4444";
 		$scope.config1.waveTextColor = "#FFAAAA";

@@ -312,10 +312,11 @@ angular.module('angularD3LiquidFillGauge', [])
   }
 
   function link(scope, elem, attrs) {
+    if (attrs.id) scope.fgId = attrs.id;
 
     scope.$watch('ngModel', function() {
       scope.config = liquidFillGaugeDefaultSettings(
-        scope.ngModel.widgetConfig);
+        scope.ngModel);
     });
     scope.$watch('attrs.id', function() {
       scope.fgId = attrs.id;
